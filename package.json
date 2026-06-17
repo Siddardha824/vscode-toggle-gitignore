@@ -1,0 +1,24 @@
+{
+    "name": "toggle-gitignore-explorer",
+    "displayName": "Toggle GitIgnore Explorer",
+    "description": "Toggle explorer.excludeGitIgnore",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.100.0"
+    },
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "toggleGitIgnoreExplorer.toggle",
+                "title": "Toggle Explorer Exclude GitIgnore"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "toggleGitIgnoreExplorer.toggle",
+                "key": "ctrl+alt+g"
+            }
+        ]
+    }
+}
