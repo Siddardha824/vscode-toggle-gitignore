@@ -1,24 +1,34 @@
 {
-    "name": "toggle-gitignore-explorer",
-    "displayName": "Toggle GitIgnore Explorer",
-    "description": "Toggle explorer.excludeGitIgnore",
-    "version": "0.0.1",
-    "engines": {
-        "vscode": "^1.100.0"
-    },
-    "main": "./extension.js",
-    "contributes": {
-        "commands": [
-            {
-                "command": "toggleGitIgnoreExplorer.toggle",
-                "title": "Toggle Explorer Exclude GitIgnore"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "toggleGitIgnoreExplorer.toggle",
-                "key": "ctrl+alt+g"
-            }
-        ]
-    }
+  "name": "toggle-gitignore-explorer",
+  "displayName": "Toggle GitIgnore Explorer",
+  "description": "Toggle explorer.excludeGitIgnore with a keyboard shortcut",
+  "version": "0.0.1",
+  "publisher": "siddardha824",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Siddardha824/toggle-gitignore-explorer.git"
+  },
+  "homepage": "https://github.com/Siddardha824/toggle-gitignore-explorer",
+  "bugs": {
+    "url": "https://github.com/Siddardha824/toggle-gitignore-explorer/issues"
+  },
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "toggleGitIgnoreExplorer.toggle",
+        "title": "Toggle Explorer Exclude GitIgnore"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "toggleGitIgnoreExplorer.toggle",
+        "key": "ctrl+alt+g",
+        "when": "filesExplorerFocus"
+      }
+    ]
+  }
 }
